@@ -1,0 +1,169 @@
+@import "tailwindcss";
+
+@theme {
+  --color-surface-bright: #373942;
+  --color-on-tertiary-container: #006444;
+  --color-on-tertiary: #003824;
+  --color-on-primary-fixed-variant: #004e5a;
+  --color-error: #ffb4ab;
+  --color-secondary-container: #00a6e0;
+  --color-on-secondary-fixed: #001e2c;
+  --color-error-container: #93000a;
+  --color-surface-container-low: #191b24;
+  --color-on-surface: #e2e1ed;
+  --color-inverse-surface: #e2e1ed;
+  --color-on-tertiary-fixed-variant: #005236;
+  --color-surface-container-lowest: #0c0e16;
+  --color-on-secondary: #00354a;
+  --color-surface: #11131b;
+  --color-primary-fixed: #a1efff;
+  --color-outline-variant: #3b494c;
+  --color-on-background: #e2e1ed;
+  --color-inverse-primary: #006876;
+  --color-on-primary: #00363e;
+  --color-surface-container: #1d1f28;
+  --color-outline: #859397;
+  --color-primary: #bef3ff;
+  --color-on-primary-container: #00616e;
+  --color-background: #11131b;
+  --color-surface-container-highest: #33343d;
+  --color-inverse-on-surface: #2e3039;
+  --color-on-error-container: #ffdad6;
+  --color-tertiary-fixed-dim: #4edea3;
+  --color-tertiary-fixed: #6ffbbe;
+  --color-tertiary-container: #57e6aa;
+  --color-on-secondary-fixed-variant: #004c69;
+  --color-surface-dim: #11131b;
+  --color-on-tertiary-fixed: #002113;
+  --color-surface-variant: #33343d;
+  --color-secondary: #7bd0ff;
+  --color-primary-fixed-dim: #00daf6;
+  --color-on-surface-variant: #bac9cd;
+  --color-on-secondary-container: #00374d;
+  --color-secondary-fixed-dim: #7bd0ff;
+  --color-secondary-fixed: #c4e7ff;
+  --color-on-primary-fixed: #001f25;
+  --color-primary-container: #0ae2ff;
+  --color-tertiary: #95ffcb;
+  --color-on-error: #690005;
+  --color-surface-tint: #00daf6;
+  --color-surface-container-high: #282a32;
+
+  --font-display: "Space Grotesk", sans-serif;
+  --font-headline-xl: "Space Grotesk", sans-serif;
+  --font-headline-md: "Space Grotesk", sans-serif;
+  --font-headline-lg: "Space Grotesk", sans-serif;
+  --font-body-lg: "Inter", sans-serif;
+  --font-body-md: "Inter", sans-serif;
+  --font-body-sm: "Inter", sans-serif;
+  --font-code-sm: "JetBrains Mono", monospace;
+  --font-code-base: "JetBrains Mono", monospace;
+  --font-label-caps: "JetBrains Mono", monospace;
+
+  --spacing-section-gap: 7.5rem;
+  --spacing-block-gap: 2.5rem;
+  --spacing-element-gap: 1rem;
+  --spacing-micro-gap: 0.375rem;
+  --spacing-grid-margin-mobile: 1.25rem;
+  --spacing-grid-margin-desktop: 4rem;
+  --spacing-grid-gutter: 1.5rem;
+}
+
+@layer base {
+  html, body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+  }
+  
+  /* Scrollbar refinement */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0c0e16;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #3b494c;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #0ae2ff;
+  }
+}
+
+/* Specific custom typography utilities from the design */
+.text-display {
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  font-weight: 600;
+}
+
+.text-headline-xl {
+  font-size: clamp(28px, 3.5vw, 40px);
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  font-weight: 600;
+}
+
+.text-headline-md {
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  font-weight: 500;
+}
+
+.text-body-lg {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+}
+
+.text-body-md {
+  font-size: 15px;
+  line-height: 24px;
+}
+
+.text-body-sm {
+  font-size: 13px;
+  line-height: 20px;
+}
+
+.text-code-base {
+  font-size: 13px;
+  line-height: 20px;
+  letter-spacing: -0.01em;
+}
+
+.text-code-sm {
+  font-size: 11px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+}
+
+.text-label-caps {
+  font-size: 10px;
+  line-height: 14px;
+  letter-spacing: 0.12em;
+  font-weight: 600;
+}
+
+/* Material Symbols class alignment */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -webkit-font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
