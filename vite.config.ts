@@ -81,3 +81,7 @@ export default defineConfig(() => {
     },
   };
 });
+return {
+  base: process.env.VITE_BASE || '/',
+  plugins: [react(), tailwindcss(), aistudioMediaPlugin()],
+  ...
